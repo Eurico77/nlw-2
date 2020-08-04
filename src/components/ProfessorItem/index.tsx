@@ -1,6 +1,6 @@
 import React from 'react';
 
-import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
+import whatsappIcon from '../../assets/image/icons/whatsapp.svg';
 
 import './styles.css';
 
@@ -9,10 +9,10 @@ function ProfessorItem(){
     return(
         <article className="professor-item">
                     <header>
-                    <img src="https://avatars0.githubusercontent.com/u/51203417?s=460&u=9435f5a45d69076a42ccd3e46f6e105e83a6cc82&v=4" alt="Eurico Magalhães"/>
+                    <img src="https://avatars0.githubusercontent.com/u/51203417?s=460&u=9435f5a45d69076a42ccd3e46f6e105e83a6cc82&v=4" alt="Samuel MArques"/>
                     <div>
                         <strong>Eurico Magalhães</strong>
-                        <span>Logica de programação</span>
+                        <span>NodeJs</span>
                     </div>
                     </header>
 
