@@ -1,28 +1,48 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import PageHeader from '../../components/pageHeader';
+import ProfessorItem from '../../components/ProfessorItem';
 
-import logoImg from "../../assets/images/logo.svg";
-import backIcon from "../../assets/images/icons/back.svg";
 
-import "./styles.css";
+import './styles.css';
 
-function TeatcherList() {
-  return (
-    <div id="page-teacher-list" className=" container ">
-      <header className="page-header">
-        <div className="top-bar-container">
-          <Link to="/">
-            <img src={backIcon} alt="voltar" />
-          </Link>
-          <img src={logoImg} alt="proffy" />
+
+function ProfessorList() {
+    return(
+        <div id="page-professor-list" className="container">
+            <PageHeader title="Estes são os proffys disponiveis.">
+                <form id="search-professores">
+                    <div className="input-block">
+                         <label htmlFor="subject">Matéria</label>
+                         <input type="text" id="subject"/>
+                     </div>
+
+                     <div className="input-block">
+                         <label htmlFor="week_day">Dia da semana</label>
+                         <input type="text" id="week_day"/>
+                     </div>
+
+                     <div className="input-block">
+                         <label htmlFor="time">Hora</label>
+                         <input type="text" id="time"/>
+                     </div>
+                </form>
+                
+            </PageHeader>
+
+            <main>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+                <ProfessorItem/>
+            </main>
         </div>
 
-        <div className="header-content">
-          <strong>Esses são os proffys disponoveis</strong>
-        </div>
-      </header>
-    </div>
-  );
+    ) 
 }
 
-export default TeatcherList;
+export default ProfessorList;

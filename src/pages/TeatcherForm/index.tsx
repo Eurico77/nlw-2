@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import PageHeader from '../../components/pageHeader';
 
-function TeatcherForm() {
-  return <h1>lista de professores</h1>;
+function ProfessorForm(){
+    return(
+        <div id="page-professor-list" className="container">
+            <PageHeader title="Que incrivel que você quer dar aulas."/>
+        </div>
+    ) 
 }
 
-export default TeatcherForm;
+export default ProfessorForm;
